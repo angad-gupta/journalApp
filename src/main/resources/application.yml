@@ -1,0 +1,37 @@
+# MongoDB URI
+#spring:
+#  data:
+#    mongodb:
+#      uri:mongodb://localhost:27017/journaldb
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://angadgupta506:2KPoPcMTNStEeVAT@cluster0.1pt3iaa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: angadgupta506@gmail.com
+    password: wbbydmxndwhxhwpw
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+server:
+  port: 8080
+
+weather:
+  api:
+    key: 3929f268c953a6b5ae28491010166164
+
+
+
+
