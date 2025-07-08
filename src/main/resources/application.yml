@@ -5,6 +5,11 @@
 #      uri:mongodb://localhost:27017/journaldb
 spring:
   data:
+    redis:
+        host: redis-12196.c15.us-east-1-2.ec2.redns.redis-cloud.com
+        port: 12196
+        password: 4laiRpDlo9HTxBhbFS23V2dMGeUbzRBh
+    #      uri: redis://default:4laiRpDlo9HTxBhbFS23V2dMGeUbzRBh@redis-12196.c15.us-east-1-2.ec2.redns.redis-cloud.com:12196
     mongodb:
       uri: mongodb+srv://angadgupta506:2KPoPcMTNStEeVAT@cluster0.1pt3iaa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       database: journaldb

@@ -31,7 +31,7 @@ public class UserScheduler {
     private AppCache appCache;
 
 //    @Scheduled(cron = "0 0 9 * * SUN")
-    @Scheduled(cron = "0 0/1 * 1/1 * ? ")
+//    @Scheduled(cron = "0 0/1 * 1/1 * ? ")
     public void fetchUsersAndSendSaMail() {
         List<User> users = userRepository.getUserForSA();
         for (User user : users) {
